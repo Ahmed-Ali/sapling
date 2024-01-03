@@ -22,7 +22,9 @@
   },
   "scripts": {
     "prettier-check": "prettier --check .",
-    "prettier-fix": "prettier --write ."
+    "prettier-fix": "prettier --write .",
+    "run-web": "yarn install && yarn workspace reviewstack run codegen && yarn workspace reviewstack.dev start",
+    "build-desktop": "yarn install && yarn workspace reviewstack run codegen && yarn workspace reviewstack.dev run tauri build"
   },
   "dependencies": {}
 }
